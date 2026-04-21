@@ -248,7 +248,7 @@ body {
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5px;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -696,6 +696,12 @@ body {
 }
 
 /* ── Responsive ── */
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .products-grid {
     grid-template-columns: 1fr;
