@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Folio — Suite</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Folio</span>
+      </div>
+      <nav class="header-nav">
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#about" class="nav-link">About</a>
+        <button class="nav-link credits-btn" onclick="openCredits()">Credits</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow mono">The Folio Suite &mdash; v2.0</p>
+      <h1 class="hero-title">
+        Tools built for<br/>
+        <em>creative work.</em>
+      </h1>
+      <p class="hero-sub">
+        A collection of refined, focused applications for writing and design.
+        No bloat. No noise. Just the tools you need.
+      </p>
+      <a href="#products" class="hero-cta">Explore Products <span class="arrow">↓</span></a>
+    </div>
+    <div class="hero-line"></div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="section-label mono">— 01 / Products</div>
+
+    <div class="products-grid">
+
+      <!-- Folio -->
+      <a href="https://oleksandrlahoza24-a11y.github.io/Folio-original/" target="_blank" class="product-card" data-index="01">
+        <div class="card-header">
+          <span class="card-tag mono">Writing</span>
+          <span class="card-arrow">↗</span>
+        </div>
+        <div class="card-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="4" width="20" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="10" y1="11" x2="22" y2="11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="10" y1="16" x2="22" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="10" y1="21" x2="17" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Folio</h2>
+        <p class="card-desc">
+          A beautiful writing space built to think alongside you. Elegant, distraction-free, and always saved — whether signed in or anonymous.
+        </p>
+        <ul class="card-features mono">
+          <li>Google sign-in sync</li>
+          <li>Anonymous local saves</li>
+          <li>Minimal, focused editor</li>
+          <li>Dark &amp; light mode</li>
+        </ul>
+        <div class="card-footer">
+          <span class="launch-label mono">Launch App</span>
+        </div>
+      </a>
+
+      <!-- Folio Studio -->
+      <a href="https://oleksandrlahoza24-a11y.github.io/Folio-studio/" target="_blank" class="product-card featured" data-index="02">
+        <div class="card-header">
+          <span class="card-tag mono">Design</span>
+          <span class="card-arrow">↗</span>
+        </div>
+        <div class="card-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="4" width="12" height="12" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="26" cy="10" r="6" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M4 26 L10 20 L16 26 L22 18 L28 26 L32 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Folio Studio</h2>
+        <p class="card-desc">
+          A browser-based vector design tool. Create artboards, layer elements, export to PNG, SVG or JSON — all without leaving your browser.
+        </p>
+        <ul class="card-features mono">
+          <li>Vector &amp; shape tools</li>
+          <li>Layered artboards</li>
+          <li>PNG / SVG / JSON export</li>
+          <li>Multi-scale export (1×–4×)</li>
+        </ul>
+        <div class="card-footer">
+          <span class="launch-label mono">Launch App</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="section-label mono">— 02 / About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="about-title">
+          Made for the<br/>
+          <em>serious creative.</em>
+        </h2>
+        <p class="about-body">
+          Folio is a suite of purposefully small tools. Each app does one thing and does it well —
+          no subscriptions, no dashboards, no enterprise pricing pages. Just open it and work.
+        </p>
+        <p class="about-body">
+          Built independently. Refined continuously. Everything runs in the browser, because the best tools don't ask you to install anything.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label mono">Applications</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label mono">Installs Required</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label mono">Documents</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Folio Suite</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://oleksandrlahoza24-a11y.github.io/Folio-original/" target="_blank" class="footer-link mono">Folio ↗</a>
+        <a href="https://oleksandrlahoza24-a11y.github.io/Folio-studio/" target="_blank" class="footer-link mono">Folio Studio ↗</a>
+        <button class="footer-link mono credits-btn" onclick="openCredits()">Credits</button>
+      </div>
+      <p class="footer-copy mono">&copy; 2025 Folio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Credits Modal -->
+  <div class="modal-overlay" id="creditsModal" onclick="closeCreditsOutside(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeCredits()">✕</button>
+      <div class="modal-top">
+        <p class="modal-eyebrow mono">Credits &amp; Authorship</p>
+        <h2 class="modal-title">The people<br/><em>behind Folio.</em></h2>
+      </div>
+      <div class="credits-list">
+        <div class="credit-entry">
+          <div class="credit-avatar">A</div>
+          <div class="credit-info">
+            <h3 class="credit-name">Oleksandr</h3>
+            <p class="credit-aka mono">aka Ardy</p>
+            <p class="credit-role">Creator &amp; Lead Developer</p>
+            <p class="credit-desc">
+              Built, designed, and maintains the entire Folio suite. From the writing engine in Folio to the vector artboard in Folio Studio — all crafted by Oleksandr.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-divider"></div>
+      <p class="modal-note mono">
+        Folio Suite is an independent project. Built with care in the browser.
+      </p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
